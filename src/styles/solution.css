@@ -1,0 +1,56 @@
+#solution {
+    background: var(--light-gray);
+    border-top: 0.125rem solid #e4e4e4;
+    display: flex;
+}
+
+#solution p {
+    font-weight: var(--fw-base);
+    color: var(--second-text-color);
+}
+
+#solution .reverse-color {
+    color: var(--primary-color);
+    font-weight: var(--fw-bold);
+}
+
+#solution .content {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    text-align: center;
+    gap: 1.75rem;
+}
+
+#solution .content>div {
+    width: fit-content;
+    align-self: center;
+    margin-bottom: 20%;
+}
+
+@media (width >=1280px) {
+    #solution {
+        background: var(--bg-color);
+        border-top: none;
+
+        >span {
+            position: absolute;
+            top: 0;
+        }
+    }
+}
+
+.content p {
+    width: 80%;
+    align-self: center;
+}
+
+.content {
+    gap: 2.5rem;
+}
+
+.card-container {
+    justify-content: center;
+    width: 100%;
+}
